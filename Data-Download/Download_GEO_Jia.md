@@ -28,7 +28,7 @@ fi
 GSE=$1
 
 # ==== Output path ====
-BASEDIR=/fs/ess/PAS2556/Bioinformatics_analysis/Human.DRG.Omics.Data/datasets/RNA.data/Download.data/$GSE
+BASEDIR=/fs/ess/PAS2556/Bioinformatics_analysis/Human.DRG.Omics.Data/datasets/RNA.data/$GSE
 METADIR=$BASEDIR/metadata
 DATADIR=$BASEDIR/download
 
