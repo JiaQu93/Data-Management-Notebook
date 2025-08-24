@@ -1,5 +1,5 @@
 
-### Create a bash file for downloading from GEO in the terminal, saved in parent folder of "GSE" data folder:
+### Create a bash file for downloading from GEO in the terminal, return folders: download and metadata under "$GSE" data folder:
    ```console
    nano geofetch_download.sbatch
    ```
