@@ -46,3 +46,21 @@ echo "[INFO] Finished $GSE"
    sbatch geofetch_download.sbatch GSE169301
    squeue -u osc_username
    ```
+
+### Other download command in terminal:
+1. Copy the link address of file
+   ```console
+   wget -P /fs/ess/PAS2556/Bioinformatics_analysis/Human.DRG.Omics.Data/datasets/RNA.data/GSE201586/download "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE201586&format=file"
+   ```
+2. Unpack the .tar file in python
+   ```console
+import tarfile
+
+file_path = "GSE201586_RAW.tar"
+output_dir = "./GSE201586_RAW"
+
+# open tar file
+with tarfile.open(file_path, "r") as tar:
+    tar.extractall(path=output_dir)  
+    print("Done, saved in", output_dir)
+   ```
